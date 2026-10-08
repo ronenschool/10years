@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NewPage1"
+             Title="NewPage1"
+             BackgroundColor="red">
+    <Grid RowDefinitions="*,*" Margin="20">
+        <Label TextColor="Orange" Text="ggorg" x:Name="lblResult" Grid.Row="0"/>
+
+        <VerticalStackLayout Spacing="10" Grid.Row="1" VerticalOptions="End">
+            <Label TextColor="Blue" Text="Your Name:"/>
+            <Entry Background="Magenta" />
+            <Label TextColor="Blue" Text="Your Age:"/>
+            <Entry Background="Magenta" />
+            <Button Clicked="Button_Clicked" TextColor="Blue" BackgroundColor="Yellow" Text="Calculate"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
